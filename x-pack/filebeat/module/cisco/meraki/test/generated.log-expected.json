@@ -1097,8 +1097,8 @@
         "observer.type": "Wireless",
         "observer.vendor": "Cisco",
         "related.ip": [
-            "10.58.64.108",
-            "10.54.37.86"
+            "10.54.37.86",
+            "10.58.64.108"
         ],
         "rsa.internal.messageid": "ids-alerts",
         "rsa.misc.event_type": "ids-alerts",
@@ -1216,8 +1216,8 @@
             "appliance"
         ],
         "related.ip": [
-            "10.148.124.84",
-            "10.28.144.180"
+            "10.28.144.180",
+            "10.148.124.84"
         ],
         "rsa.internal.messageid": "events",
         "rsa.misc.event_source": "appliance",
@@ -1453,8 +1453,8 @@
         "observer.type": "Wireless",
         "observer.vendor": "Cisco",
         "related.ip": [
-            "10.147.15.213",
-            "10.94.6.140"
+            "10.94.6.140",
+            "10.147.15.213"
         ],
         "rsa.internal.messageid": "ids-alerts",
         "rsa.misc.event_type": "ids-alerts",
@@ -1781,8 +1781,8 @@
         "observer.type": "Wireless",
         "observer.vendor": "Cisco",
         "related.ip": [
-            "10.81.234.34",
-            "10.196.96.162"
+            "10.196.96.162",
+            "10.81.234.34"
         ],
         "rsa.internal.event_desc": "Utenima security_event iqua",
         "rsa.internal.messageid": "security_event",
@@ -1844,8 +1844,8 @@
             "remips188.api.invalid"
         ],
         "related.ip": [
-            "10.78.199.43",
-            "10.40.101.224"
+            "10.40.101.224",
+            "10.78.199.43"
         ],
         "rsa.internal.messageid": "events",
         "rsa.misc.event_source": "appliance",
@@ -1919,8 +1919,8 @@
             "appliance"
         ],
         "related.ip": [
-            "10.83.131.245",
-            "10.39.172.93"
+            "10.39.172.93",
+            "10.83.131.245"
         ],
         "rsa.internal.messageid": "flows",
         "rsa.misc.action": [
@@ -1996,8 +1996,8 @@
         "observer.type": "Wireless",
         "observer.vendor": "Cisco",
         "related.ip": [
-            "10.122.204.151",
-            "10.148.211.222"
+            "10.148.211.222",
+            "10.122.204.151"
         ],
         "rsa.internal.event_desc": "umexercisecurity_event duntut",
         "rsa.internal.messageid": "security_event",
@@ -2515,8 +2515,8 @@
             "appliance"
         ],
         "related.ip": [
-            "10.16.230.121",
-            "10.196.176.243"
+            "10.196.176.243",
+            "10.16.230.121"
         ],
         "rsa.counters.dclass_r1": "velites",
         "rsa.internal.messageid": "events",
@@ -3236,8 +3236,8 @@
         "observer.type": "Wireless",
         "observer.vendor": "Cisco",
         "related.ip": [
-            "10.195.90.73",
-            "10.147.165.30"
+            "10.147.165.30",
+            "10.195.90.73"
         ],
         "rsa.internal.messageid": "ids-alerts",
         "rsa.misc.event_type": "ids-alerts",

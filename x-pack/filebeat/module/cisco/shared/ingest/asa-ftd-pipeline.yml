@@ -314,7 +314,12 @@ processors:
       if: "ctx._temp_.cisco.message_id == '302020'"
       field: "message"
       patterns:
-      - "Built %{NOTSPACE:network.direction} %{NOTSPACE:network.protocol} connection for faddr %{IP:destination.address}/%{NUMBER} (%{DATA})?gaddr %{IP:_temp_.natsrcip}/%{NUMBER} laddr %{IP:source.address}/%{NUMBER}(%{GREEDYDATA})?"
+      - "Built %{NOTSPACE:network.direction} %{NOTSPACE:network.protocol} connection for faddr (?:%{NOTCOLON:_temp_.cisco.source_interface}:)?%{ECSDESTIPORHOST}/%{NUMBER}\\s*(?:\\(%{NOTSPACE:_temp_.cisco.destination_username}\\) )?gaddr (?:%{NOTCOLON}:)?%{MAPPEDSRC}/%{NUMBER} laddr (?:%{NOTCOLON:_temp_.cisco.source_interface}:)?%{ECSSOURCEIPORHOST}/%{NUMBER}\\s*(?:\\(%{NOTSPACE:_temp_.cisco.source_username}\\) )?(type %{NUMBER:_temp_.cisco.icmp_type} code %{NUMBER:_temp_.cisco.icmp_code})?"
+      pattern_definitions:
+        NOTCOLON: "[^:]*"
+        ECSSOURCEIPORHOST: "(?:%{IP:source.address}|%{HOSTNAME:source.domain})"
+        ECSDESTIPORHOST: "(?:%{IP:destination.address}|%{HOSTNAME:destination.domain})"
+        MAPPEDSRC: "(?:%{DATA:_temp_.natsrcip}|%{HOSTNAME})"
   - dissect:
       if: "ctx._temp_.cisco.message_id == '302022'"
       field: "message"
