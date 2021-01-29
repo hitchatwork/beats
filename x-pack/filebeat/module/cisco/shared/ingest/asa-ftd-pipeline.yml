@@ -1238,7 +1238,7 @@ processors:
       value: "ipv6-icmp"
 
   #
-  # Convert integer fields, as output of dissect and kv processors is always a string
+  # Convert numeric fields to integer or long, as output of dissect and kv processors is always a string
   #
   - convert:
       field: "source.port"
@@ -1250,11 +1250,11 @@ processors:
       ignore_failure: true
   - convert:
       field: "source.bytes"
-      type: integer
+      type: long
       ignore_failure: true
   - convert:
       field: "destination.bytes"
-      type: integer
+      type: long
       ignore_failure: true
   - convert:
       field: "source.packets"
