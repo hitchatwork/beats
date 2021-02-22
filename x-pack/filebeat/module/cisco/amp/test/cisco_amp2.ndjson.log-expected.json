@@ -2103,7 +2103,7 @@
         ],
         "cisco.amp.connector_guid": "test_connector_guid",
         "cisco.amp.detection": "W32.DFC.MalParent",
-        "cisco.amp.detection_id": "6159251516445163618",
+        "cisco.amp.detection_id": "6159251516445163617",
         "cisco.amp.event_type_id": 1090519054,
         "cisco.amp.file.disposition": "Malicious",
         "cisco.amp.group_guids": [
@@ -2134,7 +2134,7 @@
         "host.os.family": "windows",
         "host.os.platform": "windows",
         "input.type": "log",
-        "log.offset": 78028,
+        "log.offset": 79352,
         "related.hash": [
             "3372c1edab46837f1e973164fa2d726c5c5e17bcb888828ccd7c4dfcc234a370",
             "209a288c68207d57e0ce6e60ebf60729",
