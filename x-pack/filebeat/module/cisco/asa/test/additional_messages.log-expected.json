@@ -116,6 +116,8 @@
         ]
     },
     {
+        "cisco.asa.icmp_code": 3,
+        "cisco.asa.icmp_type": 3,
         "cisco.asa.mapped_source_ip": "8.8.8.8",
         "cisco.asa.message_id": "302020",
         "destination.address": "10.10.10.10",
@@ -250,6 +252,8 @@
         ]
     },
     {
+        "cisco.asa.icmp_code": 1,
+        "cisco.asa.icmp_type": 3,
         "cisco.asa.mapped_source_ip": "8.8.8.8",
         "cisco.asa.message_id": "302020",
         "destination.address": "10.10.10.10",
@@ -579,9 +583,10 @@
         ]
     },
     {
+        "cisco.asa.icmp_code": 0,
+        "cisco.asa.icmp_type": 8,
         "cisco.asa.mapped_source_ip": "8.8.8.8",
         "cisco.asa.message_id": "302021",
-        "cisco.asa.source_username": "type",
         "destination.address": "192.168.2.2",
         "destination.ip": "192.168.2.2",
         "event.action": "flow-expiration",
@@ -761,6 +766,8 @@
         ]
     },
     {
+        "cisco.asa.icmp_code": 3,
+        "cisco.asa.icmp_type": 3,
         "cisco.asa.mapped_source_ip": "8.8.8.8",
         "cisco.asa.message_id": "302020",
         "destination.address": "10.10.10.10",
@@ -826,6 +833,7 @@
         "event.kind": "event",
         "event.module": "cisco",
         "event.original": "%ASA-6-302014: Teardown TCP connection 2960892904 for out111:10.10.10.10/443 to fw111:192.168.2.2/55225 duration 0:00:00 bytes 0 TCP Reset-I",
+        "event.reason": "TCP Reset-I",
         "event.severity": 6,
         "event.start": "2021-05-05T20:29:32.000Z",
         "event.timezone": "-02:00",
@@ -1743,9 +1751,6 @@
         "related.hosts": [
             "dev01"
         ],
-        "related.user": [
-            "aaaa"
-        ],
         "service.type": "cisco",
         "tags": [
             "cisco-asa",
@@ -1781,9 +1786,6 @@
         "observer.vendor": "Cisco",
         "related.hosts": [
             "dev01"
-        ],
-        "related.user": [
-            "aaaa"
         ],
         "service.type": "cisco",
         "tags": [
@@ -2121,6 +2123,7 @@
             "dev01"
         ],
         "related.ip": [
+            "10.10.10.10",
             "10.10.10.10"
         ],
         "service.type": "cisco",
@@ -2212,6 +2215,7 @@
             "dev01"
         ],
         "related.ip": [
+            "10.10.10.10",
             "10.10.10.10"
         ],
         "service.type": "cisco",
@@ -2306,6 +2310,7 @@
             "dev01"
         ],
         "related.ip": [
+            "10.20.30.40",
             "10.20.30.40"
         ],
         "service.type": "cisco",
@@ -2350,6 +2355,7 @@
             "dev01"
         ],
         "related.ip": [
+            "10.20.30.40",
             "10.20.30.40"
         ],
         "service.type": "cisco",
@@ -2394,6 +2400,7 @@
             "dev01"
         ],
         "related.ip": [
+            "10.20.30.40",
             "10.20.30.40"
         ],
         "service.type": "cisco",
@@ -2438,6 +2445,7 @@
             "dev01"
         ],
         "related.ip": [
+            "10.20.30.40",
             "10.20.30.40"
         ],
         "service.type": "cisco",
@@ -2478,6 +2486,7 @@
         "event.kind": "event",
         "event.module": "cisco",
         "event.original": "%ASA-6-302304: Teardown TCP state-bypass connection 2751765169 from server.deflan:1.2.3.4/54242 to server.deflan:2.3.4.5/9101 duration 1:00:02 bytes 245 Connection timeout",
+        "event.reason": "Connection timeout",
         "event.severity": 6,
         "event.start": "2021-04-27T05:12:21.000Z",
         "event.timezone": "-02:00",
@@ -2710,9 +2719,6 @@
         "related.ip": [
             "10.10.0.87"
         ],
-        "related.user": [
-            "enable_15"
-        ],
         "service.type": "cisco",
         "source.address": "10.10.0.87",
         "source.ip": "10.10.0.87",
@@ -2751,9 +2757,6 @@
         "observer.vendor": "Cisco",
         "related.hosts": [
             "dev01"
-        ],
-        "related.user": [
-            "enable_15"
         ],
         "service.type": "cisco",
         "tags": [
@@ -2800,9 +2803,6 @@
             "10.10.1.212",
             "10.10.1.254"
         ],
-        "related.user": [
-            "*****"
-        ],
         "service.type": "cisco",
         "source.address": "10.10.1.212",
         "source.ip": "10.10.1.212",
@@ -2845,9 +2845,6 @@
         ],
         "related.ip": [
             "10.10.0.87"
-        ],
-        "related.user": [
-            "admin"
         ],
         "service.type": "cisco",
         "source.address": "10.10.0.87",
@@ -2896,9 +2893,6 @@
             "10.10.0.87",
             "10.10.1.254"
         ],
-        "related.user": [
-            "admin"
-        ],
         "service.type": "cisco",
         "source.address": "10.10.0.87",
         "source.ip": "10.10.0.87",
@@ -2941,9 +2935,6 @@
         ],
         "related.ip": [
             "10.10.0.87"
-        ],
-        "related.user": [
-            "admin"
         ],
         "service.type": "cisco",
         "source.address": "10.10.0.87",
@@ -3049,9 +3040,6 @@
         "related.ip": [
             "91.240.17.178"
         ],
-        "related.user": [
-            "91.240.17.178"
-        ],
         "service.type": "cisco",
         "source.bytes": 297103,
         "source.user.name": "91.240.17.178",
@@ -3063,6 +3051,7 @@
     {
         "cisco.asa.assigned_ip": "8.8.4.4",
         "cisco.asa.message_id": "722051",
+        "cisco.asa.webvpn.group_name": "some-policy",
         "event.action": "firewall-rule",
         "event.category": [
             "network"
@@ -3092,9 +3081,6 @@
         "related.ip": [
             "8.8.8.8"
         ],
-        "related.user": [
-            "testuser"
-        ],
         "service.type": "cisco",
         "source.address": "8.8.8.8",
         "source.as.number": 15169,
@@ -3113,6 +3099,7 @@
     },
     {
         "cisco.asa.message_id": "716002",
+        "cisco.asa.webvpn.group_name": "another-policy",
         "event.action": "firewall-rule",
         "event.category": [
             "network"
@@ -3122,7 +3109,7 @@
         "event.kind": "event",
         "event.module": "cisco",
         "event.original": "%ASA-6-716002: Group another-policy User testuser IP 8.8.8.8 WebVPN session terminated: User Requested.",
-        "event.reason": "User Requested.",
+        "event.reason": "User Requested",
         "event.severity": 6,
         "event.timezone": "-02:00",
         "event.type": [
@@ -3143,9 +3130,6 @@
         "related.ip": [
             "8.8.8.8"
         ],
-        "related.user": [
-            "testuser"
-        ],
         "service.type": "cisco",
         "source.address": "8.8.8.8",
         "source.as.number": 15169,
@@ -3164,6 +3148,7 @@
     },
     {
         "cisco.asa.message_id": "716002",
+        "cisco.asa.webvpn.group_name": "another-policy",
         "event.action": "firewall-rule",
         "event.category": [
             "network"
@@ -3173,7 +3158,7 @@
         "event.kind": "event",
         "event.module": "cisco",
         "event.original": "%ASA-6-716002: Group another-policy User alice IP 192.168.50.1 WebVPN session terminated: Idle timeout.",
-        "event.reason": "Idle timeout.",
+        "event.reason": "Idle timeout",
         "event.severity": 6,
         "event.timezone": "-02:00",
         "event.type": [
@@ -3193,9 +3178,6 @@
         ],
         "related.ip": [
             "192.168.50.1"
-        ],
-        "related.user": [
-            "alice"
         ],
         "service.type": "cisco",
         "source.address": "192.168.50.1",
